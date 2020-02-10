@@ -1,0 +1,13 @@
+server:
+  port: 12345
+
+spring:
+  application:
+    name: keycloak-demo
+  datasource:
+    hikari:
+      connection-timeout: 10000
+      maximum-pool-size: 5
+    url: jdbc:postgresql://localhost:5432/pgapp
+    username: pguser
+    password: pgpass
