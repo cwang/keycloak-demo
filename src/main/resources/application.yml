@@ -11,3 +11,10 @@ spring:
     url: jdbc:postgresql://localhost:5432/pgapp
     username: pguser
     password: pgpass
+
+keycloak:
+  realm: demo
+  auth-server-url: http://localhost:8080/auth
+  resource: ${spring.application.name}
+  principal-attribute: preferred_username
+  public-client: true
